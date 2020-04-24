@@ -3,6 +3,7 @@ function getLocation() {
   if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
     document.getElementById("ubicacion").innerHTML=showPosition.coords.longitude+" "+showPosition.coords.latitude;
+    console.log("Listo");
   } else {
     console.log("Geo Location not supported by browser");
   }
@@ -14,5 +15,4 @@ function showPosition(position) {
     latitude: position.coords.latitude
   }
   console.log(location)
-  document.getElementById("ubicacion").innerHTML=position.coords.longitude+" "+position.coords.latitude;
 }
