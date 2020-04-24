@@ -4,6 +4,7 @@ var filesToCache = [
   '/hello-pwa/index.html',
   '/hello-pwa/css/style.css',
   '/hello-pwa/js/main.js'
+  '/hello-pwa/js/geo.js'
 ];
 
 /* Start the service worker and cache all of the app's content */
