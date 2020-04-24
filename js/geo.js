@@ -1,18 +1,14 @@
-//function that gets the location and returns it
+var x = document.getElementById("ubicacion");
+
 function getLocation() {
-  if(navigator.geolocation) {
+  if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
-    document.getElementById("ubicacion").innerHTML=showPosition.coords.longitude+" "+showPosition.coords.latitude;
-    console.log("Listo");
-  } else {
-    console.log("Geo Location not supported by browser");
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
-//function that retrieves the position
+
 function showPosition(position) {
-  var location = {
-    longitude: position.coords.longitude,
-    latitude: position.coords.latitude
-  }
-  console.log(location)
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
 }
