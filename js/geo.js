@@ -2,6 +2,7 @@
 function getLocation() {
   if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
+    document.getElementById("ubicacion").innerHTML=showPosition.coords.longitude+" "+showPosition.coords.latitude;
   } else {
     console.log("Geo Location not supported by browser");
   }
