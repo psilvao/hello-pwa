@@ -3,7 +3,7 @@ var filesToCache = [
   '/hello-pwa/',
   '/hello-pwa/index.html',
   '/hello-pwa/css/style.css',
-  '/hello-pwa/js/main.js'
+  '/hello-pwa/js/main.js',
   '/hello-pwa/js/geo.js'
 ];
 
