@@ -13,5 +13,5 @@ function showPosition(position) {
     latitude: position.coords.latitude
   }
   console.log(location)
-  document.getElementById("ubicacion").innerHTML=location;
+  document.getElementById("ubicacion").innerHTML=position.coords.longitude+" "+position.coords.latitude;
 }
